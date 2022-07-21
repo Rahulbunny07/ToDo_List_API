@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo-List</title>
+    <style>
+        #show_all{
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
+        }
+        #completed{
+            background-color: #04AA6D;
+            border-radius: 5px;
+            padding: 5px;
+            margin: 5px;
+        }
+        #pending{
+            border-radius: 5px;
+            background-color: red;
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head"></h1>
+     <button id="show_all" onclick="Show_All()">Show_All</button>
+     <button id="completed" onclick="Completed()" style="background-color: green;">Completed</button>
+     <button id="pending" onclick="Pending()" style="background-color: red;">Pending</button>
+     <div id="todos"></div>
+</body>
+<script src="index.js"></script>
+</html>
